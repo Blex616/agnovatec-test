@@ -1,0 +1,14 @@
+<div *ngIf="data.length">
+    <table mdbTable striped="true" bordered="true">
+        <thead class="black white-text">
+            <tr>
+                <th>Caracteristica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>{{item.versions[0].name}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

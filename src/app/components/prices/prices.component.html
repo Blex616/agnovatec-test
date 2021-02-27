@@ -1,0 +1,16 @@
+<div *ngIf="data.length">
+    <table mdbTable striped="true" bordered="true">
+        <thead class="black white-text">
+            <tr>
+                <th>Nombre Precio</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data">
+                <td>{{item.versions[0].name}}</td>
+                <td>{{item.versions[0].price.amount}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

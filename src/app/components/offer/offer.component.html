@@ -1,0 +1,4 @@
+<select class="browser-default custom-select" #offer (change)='onOptionsSelected(offer.value)'>
+    <option selected>Seleccione</option>
+    <option *ngFor="let item of data" value="{{item.versions[0].id}}">{{item.versions[0].id}} - {{item.versions[0].name}}</option>
+</select>
